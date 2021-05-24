@@ -1,0 +1,35 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+#about {
+  @include containerPadding;
+  @include flexDisplay(center);
+
+  margin: 5rem 0;
+}
+
+#about-image {
+  width: 35rem;
+  height: 20rem;
+
+  background-image: url("/src/images/desktop/image-interactive.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#about-article {
+  padding: 2rem;
+
+  width: 35rem;
+  height: 20rem;
+
+  h1 {
+    margin: 0;
+    
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
