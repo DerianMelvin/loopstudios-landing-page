@@ -1,0 +1,9 @@
+@mixin containerPadding {
+  padding: 1rem 5rem;
+}
+
+@mixin flexDisplay($justify) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
