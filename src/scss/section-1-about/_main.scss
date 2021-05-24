@@ -3,14 +3,14 @@
 
 #about {
   @include containerPadding;
-  @include flexDisplay(center);
+  @include flexDisplay(space-between);
 
   margin: 5rem 0;
 }
 
-#about-image {
-  width: 35rem;
-  height: 20rem;
+#about-image {  
+  width: 70%;
+  height: 30rem;
 
   background-image: url("/src/images/desktop/image-interactive.jpg");
   background-position: center;
@@ -19,10 +19,17 @@
 }
 
 #about-article {
-  padding: 2rem;
+  padding: 4rem;
+  
+  position: absolute;
+  right: 3rem;
 
   width: 35rem;
   height: 20rem;
+
+  background-color: $white;
+
+  transform: translate(0, 8rem);
 
   h1 {
     margin: 0;
