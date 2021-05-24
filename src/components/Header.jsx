@@ -6,19 +6,19 @@ const Header = () => {
       <nav>
         <img src={logo} alt="loopstudios logo" />
         <ul>
-          <li id="about" className="link">
+          <li className="link">
             About
           </li>
-          <li id="careers" className="link">
+          <li className="link">
             Careers
           </li>
-          <li id="events" className="link">
+          <li className="link">
             Events
           </li>
-          <li id="products" className="link">
+          <li className="link">
             Products
           </li>
-          <li id="support" className="link">
+          <li className="link">
             Support
           </li>
         </ul>
