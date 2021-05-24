@@ -24,13 +24,13 @@ nav ul li {
 }
 
 #hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 5rem 0;
   padding: 0 1.5rem;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 28rem;
   height: 12rem;
   border: 1px solid white;
@@ -41,6 +41,36 @@ nav ul li {
   font-weight: 300;
   color: white;
   line-height: 2.9rem;
+}
+
+#about {
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+#about-image {
+  width: 35rem;
+  height: 20rem;
+  background-image: url("/src/images/desktop/image-interactive.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#about-article {
+  padding: 2rem;
+  width: 35rem;
+  height: 20rem;
+}
+#about-article h1 {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 html {
