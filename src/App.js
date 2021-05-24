@@ -7,7 +7,7 @@ function App() {
       <Header />
       <section id="about">
         <div id="about-image"></div>
-        <article>
+        <article id="about-article">
           <h1>The Leader in Interactive VR</h1>
           <p>
             Founded in 2011, Loopstudios has been producing world-class virtual
