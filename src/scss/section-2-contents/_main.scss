@@ -1,0 +1,25 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+#contents {
+  @include containerPadding;
+
+  display: grid;
+  grid-template-areas:
+    "heading button"
+    "contentsList contentsList";
+}
+
+#contents-heading {
+  grid-area: heading;
+}
+
+#contents-button {
+  grid-area: button;
+}
+
+#contents-list {
+  grid-area: contentsList;
+  
+  list-style: none;
+}
