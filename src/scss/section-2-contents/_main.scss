@@ -5,21 +5,69 @@
   @include containerPadding;
 
   display: grid;
+  align-items: center;
   grid-template-areas:
     "heading button"
     "contentsList contentsList";
 }
 
 #contents-heading {
+  @include headingFont(3rem);
+
   grid-area: heading;
 }
 
 #contents-button {
+  @include headingFont(1rem);
+
+  margin: 0;
+  padding-top: 0.3rem;
+
   grid-area: button;
+  justify-self: flex-end;
+
+  width: 9rem;
+  height: 2.7rem;
+
+  letter-spacing: 0.1rem;
+
+  cursor: pointer;
+  border: 1px solid $black;
+  background-color: $white;
+
+  h4 {
+    margin: 0;
+  }
 }
 
 #contents-list {
   grid-area: contentsList;
+
+  padding: 0;
   
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem;
+
   list-style: none;
+}
+
+.item {
+  @include flexDisplay(flex-start);
+  @include headingFont(1.5rem);
+
+  align-items: flex-end;
+
+  padding: 1.5rem;
+
+  min-width: 9rem;
+  max-width: 16rem;
+  height: 27rem;
+  color: $white;
+
+  background: url('/src/images/desktop/image-deep-earth.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
