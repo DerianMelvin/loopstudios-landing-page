@@ -14,10 +14,10 @@ nav {
   color: white;
 }
 nav ul {
-  list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
 }
 nav ul li {
   margin: 0 1rem;
@@ -29,18 +29,18 @@ nav ul li {
   justify-content: center;
   margin: 5rem 0;
   padding: 0 1.5rem;
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
   width: 28rem;
   height: 12rem;
   border: 1px solid white;
 }
 #hero-text h1 {
-  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 3rem;
   font-weight: 300;
-  color: white;
+  text-transform: uppercase;
+  margin: 0;
   line-height: 2.9rem;
+  color: white;
 }
 
 #about {
@@ -70,15 +70,34 @@ nav ul li {
   transform: translate(0, 8rem);
 }
 #about-article h1 {
-  margin: 0;
   font-family: "Josefin Sans", sans-serif;
   font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
+  margin: 0;
   color: black;
 }
 #about-article p {
   color: dimgray;
+}
+
+#contents {
+  padding: 1rem 5rem;
+  display: grid;
+  grid-template-areas: "heading button" "contentsList contentsList";
+}
+
+#contents-heading {
+  grid-area: heading;
+}
+
+#contents-button {
+  grid-area: button;
+}
+
+#contents-list {
+  grid-area: contentsList;
+  list-style: none;
 }
 
 html {
