@@ -21,11 +21,9 @@ nav {
   color: $white;
 
   ul {
+    @include flexDisplay(center);
+    
     list-style: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     li {
       margin: 0 1rem;
@@ -39,21 +37,18 @@ nav {
   margin: 5rem 0;
   padding: 0 1.5rem;
 
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-
   width: 28rem;
   height: 12rem;
 
   border: 1px solid $white;
 
   h1 {
-    margin: 0;
+    @include headingFont(3rem);
 
-    font-size: 3rem;
-    font-weight: 300;
+    margin: 0;
+    
+    line-height: 2.9rem;
     color: $white;
 
-    line-height: 2.9rem;
   }
 }

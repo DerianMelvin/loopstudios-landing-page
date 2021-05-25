@@ -7,3 +7,10 @@
   align-items: center;
   justify-content: $justify;
 }
+
+@mixin headingFont($font-size: 3rem) {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: $font-size;
+  font-weight: 300;
+  text-transform: uppercase;
+}
