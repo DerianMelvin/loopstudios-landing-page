@@ -7,3 +7,24 @@ $veryDarkGray: hsl(0, 0%, 41%);
 // Screen sizes
 $mobile: 375px;
 $desktop: 1440px;
+
+// Image backgrounds
+$contents-background-desktop: // (id num), (url)
+  "1" url('/src/images/desktop/image-deep-earth.jpg'),
+  "2" url('/src/images/desktop/image-night-arcade.jpg'),
+  "3" url('/src/images/desktop/image-soccer-team.jpg'),
+  "4" url('/src/images/desktop/image-grid.jpg'),
+  "5" url('/src/images/desktop/image-from-above.jpg'),
+  "6" url('/src/images/desktop/image-pocket-borealis.jpg'),
+  "7" url('/src/images/desktop/image-curiosity.jpg'),
+  "8" url('/src/images/desktop/image-fisheye.jpg');
+
+$contents-background-mobile: // (id num), (url)
+  "1" url('/src/images/mobile/image-deep-earth.jpg'),
+  "2" url('/src/images/mobile/image-night-arcade.jpg'),
+  "3" url('/src/images/mobile/image-soccer-team.jpg'),
+  "4" url('/src/images/mobile/image-grid.jpg'),
+  "5" url('/src/images/mobile/image-from-above.jpg'),
+  "6" url('/src/images/mobile/image-pocket-borealis.jpg'),
+  "7" url('/src/images/mobile/image-curiosity.jpg'),
+  "8" url('/src/images/mobile/image-fisheye.jpg');
