@@ -4,6 +4,8 @@
 #contents {
   @include containerPadding;
 
+  margin: 2rem 0;
+
   display: grid;
   align-items: center;
   grid-template-areas:
@@ -44,7 +46,7 @@
   grid-area: contentsList;
 
   padding: 0;
-  
+
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(4, auto);
@@ -55,19 +57,36 @@
 
 .item {
   @include flexDisplay(flex-start);
-  @include headingFont(1.5rem);
 
   align-items: flex-end;
 
   padding: 1.5rem;
 
-  min-width: 9rem;
-  max-width: 16rem;
-  height: 27rem;
+  width: clamp(10rem, 18vw, 16rem);
+  height: 28rem;
+
   color: $white;
 
-  background: url('/src/images/desktop/image-deep-earth.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  h4 {
+    @include headingFont(1.7rem);
+
+    margin: 0;
+
+    width: 8rem;
+  }
+}
+
+// Add unique background images to each item
+@each $num, $url in $contents-background-desktop {
+  #item-#{$num} {
+    background: linear-gradient(
+      45deg,
+      hsla(0, 0%, 0%, 0.7),
+      hsla(0, 0%, 0%, 0)
+    ), $url;
+  }
 }
