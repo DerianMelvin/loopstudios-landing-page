@@ -15,7 +15,7 @@ header {
   background-repeat: no-repeat;
 }
 
-nav {
+#header-nav {
   @include flexDisplay(space-between);
 
   color: $white;
