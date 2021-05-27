@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 header {
-  padding: 1rem 5rem;
+  padding: 2rem 5rem;
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("/src/images/desktop/image-hero.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-nav {
+#header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
 }
-nav ul {
+#header-nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
 }
-nav ul li {
+#header-nav ul li {
   margin: 0 1rem;
 }
 
@@ -44,7 +44,7 @@ nav ul li {
 }
 
 #about {
-  padding: 1rem 5rem;
+  padding: 2rem 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,7 +82,7 @@ nav ul li {
 }
 
 #contents {
-  padding: 1rem 5rem;
+  padding: 2rem 5rem;
   margin: 2rem 0;
   display: grid;
   align-items: center;
@@ -179,6 +179,46 @@ nav ul li {
 
 #item-8 {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("/src/images/desktop/image-fisheye.jpg");
+}
+
+footer {
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+}
+
+#footer-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+#footer-nav ul li {
+  margin-right: 1rem;
+}
+
+#footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#footer-info ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer-info ul a {
+  margin-left: 1rem;
+}
+
+#copyright {
+  color: dimgray;
 }
 
 html {
