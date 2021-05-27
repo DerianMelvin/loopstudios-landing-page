@@ -1,26 +1,16 @@
-import logo from '../images/logo.svg';
+import logo from "../images/logo.svg";
 
 const Header = () => {
   return (
     <header>
-      <nav>
+      <nav id="header-nav">
         <img src={logo} alt="loopstudios logo" />
         <ul>
-          <li className="link">
-            About
-          </li>
-          <li className="link">
-            Careers
-          </li>
-          <li className="link">
-            Events
-          </li>
-          <li className="link">
-            Products
-          </li>
-          <li className="link">
-            Support
-          </li>
+          <li className="link">About</li>
+          <li className="link">Careers</li>
+          <li className="link">Events</li>
+          <li className="link">Products</li>
+          <li className="link">Support</li>
         </ul>
       </nav>
 
