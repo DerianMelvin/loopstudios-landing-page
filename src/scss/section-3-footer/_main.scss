@@ -1,0 +1,43 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+footer {
+  @include containerPadding;
+  @include flexDisplay(space-between);
+
+  color: $white;
+  background-color: $black;
+}
+
+#footer-nav {
+  ul {
+    @include flexDisplay(center);
+    
+    padding: 0;
+
+    list-style: none;
+
+    li {
+      margin-right: 1rem;
+    }
+  }
+}
+
+#footer-info {
+  @include flexDisplay(center);
+
+  align-items: flex-end;
+  flex-direction: column;
+
+  ul {
+    @include flexDisplay(center);
+    
+    a {
+      margin-left: 1rem;
+    }
+  }
+}
+
+#copyright {
+  color: $veryDarkGray;
+}
