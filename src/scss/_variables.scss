@@ -5,8 +5,10 @@ $darkGray: hsl(0, 0%, 55%);
 $veryDarkGray: hsl(0, 0%, 41%);
 
 // Screen sizes
-$mobile: 375px;
-$desktop: 1440px;
+$small: 500px;
+$medium: 860px;
+$large: 1024px;
+$extra-large: 1440px;
 
 // Image backgrounds
 $contents-background-desktop: // (id num), (url)
