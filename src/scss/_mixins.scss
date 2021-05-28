@@ -1,5 +1,5 @@
 @mixin containerPadding {
-  padding: 2rem 5rem;
+  padding: 2rem 10%;
 }
 
 @mixin flexDisplay($justify) {
@@ -8,9 +8,17 @@
   justify-content: $justify;
 }
 
+// Set default font properties for heading elements
 @mixin headingFont($font-size: 3rem) {
   font-family: "Josefin Sans", sans-serif;
   font-size: $font-size;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+// Set media queries based on given screen size
+@mixin mediaBreakpoint($media-size) {
+  @media (min-width: #{$media-size}) {
+    @content;
+  }
 }
