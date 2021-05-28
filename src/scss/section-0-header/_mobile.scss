@@ -1,0 +1,55 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+header {
+  @include containerPadding;
+
+  height: 100vh;
+
+  // Default font color
+  color: $white;
+
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("/src/images/desktop/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#header-nav {
+  @include flexDisplay(space-between);
+
+  // Logo
+  img {
+    height: 1.6rem;
+  }
+
+  // Navigation
+  ul {
+    display: none;
+  }
+}
+
+#hero-text {
+  @include flexDisplay(flex-start);
+  
+  margin-top: 30vh;
+  padding: 7%;
+
+  border: 1px solid $white;
+
+  h1 {
+    @include headingFont(2.1rem);
+
+    margin: 0;
+
+    width: 70%;
+    
+    line-height: 2.2rem;
+
+  }
+}
