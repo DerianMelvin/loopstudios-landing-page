@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 header {
-  padding: 2rem 5rem;
+  padding: 2rem 10%;
+  height: 100vh;
+  color: white;
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("/src/images/desktop/image-hero.jpg");
   background-position: center;
   background-size: cover;
@@ -11,40 +13,62 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+}
+#header-nav img {
+  height: 1.6rem;
 }
 #header-nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-#header-nav ul li {
-  margin: 0 1rem;
+  display: none;
 }
 
 #hero-text {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 5rem 0;
-  padding: 0 1.5rem;
-  width: 28rem;
-  height: 12rem;
+  justify-content: flex-start;
+  margin-top: 30vh;
+  padding: 7%;
   border: 1px solid white;
 }
 #hero-text h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 3rem;
+  font-size: 2.1rem;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0;
-  line-height: 2.9rem;
-  color: white;
+  width: 70%;
+  line-height: 2.2rem;
 }
 
+@media (min-width: 500px) {
+  header {
+    height: auto;
+  }
+
+  #header-nav img {
+    height: 2rem;
+  }
+
+  #hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5rem 0;
+    padding: 0 1.5rem;
+    width: 24rem;
+    height: 12rem;
+    border: 1px solid white;
+  }
+  #hero-text h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: auto;
+    line-height: 2.7rem;
+  }
+}
 #about {
-  padding: 2rem 5rem;
+  padding: 2rem 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,7 +106,7 @@ header {
 }
 
 #contents {
-  padding: 2rem 5rem;
+  padding: 2rem 10%;
   margin: 2rem 0;
   display: grid;
   align-items: center;
@@ -182,7 +206,7 @@ header {
 }
 
 footer {
-  padding: 2rem 5rem;
+  padding: 2rem 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -190,11 +214,15 @@ footer {
   background-color: black;
 }
 
+#footer-nav img {
+  height: 2rem;
+}
 #footer-nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
+  margin: 1rem 0 0;
   list-style: none;
 }
 #footer-nav ul li {
@@ -212,12 +240,16 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  margin: 0;
+  height: 2.4rem;
 }
 #footer-info ul a {
   margin-left: 1rem;
 }
 
 #copyright {
+  margin: 1rem 0 0;
   color: dimgray;
 }
 
