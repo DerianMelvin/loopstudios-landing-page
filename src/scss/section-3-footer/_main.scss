@@ -10,10 +10,15 @@ footer {
 }
 
 #footer-nav {
+  img {
+    height: 2rem;
+  }
+
   ul {
     @include flexDisplay(center);
     
     padding: 0;
+    margin: 1rem 0 0;
 
     list-style: none;
 
@@ -31,6 +36,11 @@ footer {
 
   ul {
     @include flexDisplay(center);
+
+    padding: 0;
+    margin: 0;
+
+    height: 2.4rem;
     
     a {
       margin-left: 1rem;
@@ -39,5 +49,7 @@ footer {
 }
 
 #copyright {
+  margin: 1rem 0 0;
+
   color: $veryDarkGray;
 }
