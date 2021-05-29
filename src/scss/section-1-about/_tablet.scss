@@ -1,0 +1,63 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+/*
+  ==========================
+   TABLET - SMALL
+  ==========================
+*/
+@include mediaBreakpoint($small) {
+  #about-image {
+    background-image: url("/src/images/desktop/image-interactive.jpg");
+  }
+
+  #about-article {
+    h1 {
+      @include headingFont(2.7rem);
+
+      width: 90%;
+    }
+  }
+}
+
+/*
+  ==========================
+   TABLET - LARGE
+  ==========================
+*/
+@include mediaBreakpoint($medium) {
+  #about {
+    @include containerPadding;
+    @include flexDisplay(space-between);
+
+    flex-direction: row;
+
+    margin: 5rem 0;
+  }
+
+  #about-image {
+    width: 80%;
+  }
+
+  #about-article {
+    display: block;
+    
+    padding: 3.5rem;
+
+    position: absolute;
+    right: 3rem;
+
+    width: 35rem;
+    height: 20rem;
+
+    text-align: left;
+
+    transform: translate(0, 11rem);
+
+    h1 {
+      margin: 0;
+
+      width: 80%;
+    }
+  }
+}
