@@ -138,40 +138,95 @@ header {
   padding: 2rem 10%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 5rem 0;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
 }
 
 #about-image {
-  width: 70%;
-  height: 30rem;
-  background-image: url("/src/images/desktop/image-interactive.jpg");
+  padding-top: 56.25%;
+  width: 100%;
+  background-image: url("/src/images/mobile/image-interactive.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #about-article {
-  padding: 4rem;
-  position: absolute;
-  right: 3rem;
-  width: 35rem;
-  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   background-color: white;
-  transform: translate(0, 8rem);
 }
 #about-article h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 0;
+  margin: 2rem 0;
+  width: 95%;
   color: black;
 }
 #about-article p {
+  margin: 0;
+  line-height: 1.8;
   color: dimgray;
 }
 
+/*
+  ==========================
+   TABLET - SMALL
+  ==========================
+*/
+@media (min-width: 500px) {
+  #about-image {
+    background-image: url("/src/images/desktop/image-interactive.jpg");
+  }
+
+  #about-article h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 90%;
+  }
+}
+/*
+  ==========================
+   TABLET - LARGE
+  ==========================
+*/
+@media (min-width: 860px) {
+  #about {
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 5rem 0;
+  }
+
+  #about-image {
+    width: 80%;
+  }
+
+  #about-article {
+    display: block;
+    padding: 3.5rem;
+    position: absolute;
+    right: 3rem;
+    width: 35rem;
+    height: 20rem;
+    text-align: left;
+    transform: translate(0, 11rem);
+  }
+  #about-article h1 {
+    margin: 0;
+    width: 80%;
+  }
+}
 #contents {
   padding: 2rem 10%;
   margin: 2rem 0;
