@@ -1,0 +1,50 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+#about {
+  @include containerPadding;
+  @include flexDisplay(center);
+
+  flex-direction: column;
+
+  margin-top: 5rem;
+}
+
+#about-image {
+  // 16:9 aspect ratio
+  padding-top: 56.25%;
+
+  width: 100%;
+
+  background-image: url("/src/images/mobile/image-interactive.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#about-article {
+  @include flexDisplay(center);
+
+  flex-direction: column;
+
+  text-align: center;
+  background-color: $white;
+
+  h1 {
+    @include headingFont(2rem);
+
+    margin: 2rem 0;
+
+    width: 95%;
+
+    color: $black;
+  }
+
+  p {
+    margin: 0;
+
+    line-height: 1.8;
+
+    color: $veryDarkGray;
+  }
+}
