@@ -23,10 +23,10 @@ const Footer = () => {
 
         <div id="footer-info">
           <ul id="social-media">
-            <a href="#"><img src={iFacebook} alt="facebook" /></a>
-            <a href="#"><img src={iTwitter} alt="twitter" /></a>
-            <a href="#"><img src={iPinterest} alt="pinterest" /></a>
-            <a href="#"><img src={iInstagram} alt="instagram" /></a>
+            <a href="#facebook"><img src={iFacebook} alt="facebook" /></a>
+            <a href="#twitter"><img src={iTwitter} alt="twitter" /></a>
+            <a href="#pinterest"><img src={iPinterest} alt="pinterest" /></a>
+            <a href="#instagram"><img src={iInstagram} alt="instagram" /></a>
           </ul>
           <p id="copyright">&#169; {currentYear} Loopstudios. All rights reserved.</p>
         </div>
