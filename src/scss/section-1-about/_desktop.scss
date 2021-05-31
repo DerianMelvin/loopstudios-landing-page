@@ -1,44 +1,52 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
-#about {
-  @include containerPadding;
-  @include flexDisplay(space-between);
-
-  margin: 5rem 0;
-}
-
-#about-image {  
-  width: 70%;
-  height: 30rem;
-
-  background-image: url("/src/images/desktop/image-interactive.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#about-article {
-  padding: 4rem;
-  
-  position: absolute;
-  right: 3rem;
-
-  width: 35rem;
-  height: 20rem;
-
-  background-color: $white;
-
-  transform: translate(0, 8rem);
-
-  h1 {
-    @include headingFont(3rem);
-    margin: 0;
-
-    color: $black;
+/*
+  ==========================
+   DESKTOP - SMALL
+  ==========================
+*/
+@include mediaBreakpoint($large) {
+  #about {
+    margin: 6rem 0;
   }
 
-  p {
-    color: $veryDarkGray;
+  #about-article {
+    width: 42rem;
+    height: 23rem;
+
+    h1 {
+      @include headingFont(3.4rem);
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/*
+  ==========================
+   DESKTOP - LARGE
+  ==========================
+*/
+@include mediaBreakpoint($extra-large) {
+  #about {
+    margin: 7rem 0;
+  }
+
+  #about-article {
+    width: 48rem;
+    height: 24rem;
+
+    transform: translate(-3rem, 15rem);
+
+    h1 {
+      @include headingFont(4rem);
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
   }
 }
