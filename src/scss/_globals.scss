@@ -1,0 +1,15 @@
+// Import font 'Alata' & 'Josefin Sans'
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Alata', sans-serif;
+}
