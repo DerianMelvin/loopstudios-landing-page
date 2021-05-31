@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-
 const Contents = () => {
-  const [list, setList] = useState([
+  const list = [
     "Deep Earth",
     "Night Arcade",
     "Soccer Team VR",
@@ -10,7 +8,7 @@ const Contents = () => {
     "Pocket Borealis",
     "The Curiosity",
     "Make It Fisheye",
-  ]);
+  ];
 
   return (
     <section id="contents">
