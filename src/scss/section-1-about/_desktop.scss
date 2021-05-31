@@ -12,7 +12,9 @@
   }
 
   #about-article {
-    width: 42rem;
+    padding: 4.3rem;
+
+    width: 44rem;
     height: 23rem;
 
     h1 {
@@ -36,10 +38,10 @@
   }
 
   #about-article {
-    width: 48rem;
+    width: 50rem;
     height: 24rem;
 
-    transform: translate(-3rem, 15rem);
+    transform: translate(-3rem, 18rem);
 
     h1 {
       @include headingFont(4rem);
