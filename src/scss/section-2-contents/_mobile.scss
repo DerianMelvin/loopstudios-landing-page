@@ -14,8 +14,9 @@
 }
 
 #contents-heading {
-  @include headingFont(3rem);
+  @include headingFont(2rem);
 
+  text-align: center;
   grid-area: heading;
 }
 
@@ -60,19 +61,19 @@
 
   align-items: flex-end;
 
-  padding: 2rem;
+  padding: 1.5rem;
+  padding-top: 14%;
 
   width: 100%;
-  height: 12rem;
 
   color: $white;
 
   h4 {
-    @include headingFont(2rem);
+    @include headingFont(1.7rem);
 
     margin: 0;
 
-    width: 12rem;
+    width: 10rem;
   }
 }
 
