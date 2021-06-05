@@ -1,0 +1,65 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+footer {
+  @include containerPadding;
+  @include flexDisplay(space-between);
+
+  flex-direction: column;
+
+  color: $white;
+  background-color: $black;
+}
+
+#footer-nav {
+  @include flexDisplay(space-between);
+
+  flex-direction: column;
+
+  img {
+    margin: 2rem 0;
+    height: 2rem;
+  }
+
+  ul {
+    @include flexDisplay(center);
+
+    flex-direction: column;
+    
+    padding: 0;
+    margin: 1rem 0 0;
+
+    list-style: none;
+
+    li {
+      padding: 1rem;
+    }
+  }
+}
+
+#footer-info {
+  @include flexDisplay(center);
+
+  flex-direction: column;
+
+  margin-top: 2rem;
+
+  ul {
+    @include flexDisplay(center);
+
+    padding: 0;
+    margin: 0;
+
+    height: 2.4rem;
+    
+    a {
+      padding: 0.7rem;
+    }
+  }
+}
+
+#copyright {
+  font-size: 0.9rem;
+  text-align: center;
+  color: $veryDarkGray;
+}
