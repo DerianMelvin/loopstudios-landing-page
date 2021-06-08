@@ -15,14 +15,14 @@ const Contents = () => {
       <h1 id="contents-heading">Our Creations</h1>
 
       <button id="contents-button">
-        <h4>See All</h4>
+        <h3>See All</h3>
       </button>
 
       <ul id="contents-list">
         {list.map((item, i) => {
           return (
             <li id={`item-${i + 1}`} className="item">
-              <h4>{item}</h4>
+              <h2>{item}</h2>
             </li>
           );
         })}
