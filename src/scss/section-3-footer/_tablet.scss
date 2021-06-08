@@ -6,7 +6,7 @@
    TABLET - SMALL
   ==========================
 */
-@include mediaBreakpoint($small) {
+@include mediaBreakpoint($tablet-small) {
 }
 
 /*
@@ -14,7 +14,7 @@
    TABLET - LARGE
   ==========================
 */
-@include mediaBreakpoint($medium) {
+@include mediaBreakpoint($tablet-large) {
   footer {
     flex-direction: row;
   }

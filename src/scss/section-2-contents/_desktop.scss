@@ -6,7 +6,7 @@
    DESKTOP - SMALL
   ==========================
 */
-@include mediaBreakpoint($large) {
+@include mediaBreakpoint($desktop-small) {
   .item {
     height: 30rem;
   }
@@ -17,7 +17,7 @@
    DESKTOP - LARGE
   ==========================
 */
-@include mediaBreakpoint($extra-large) {
+@include mediaBreakpoint($desktop-large) {
   .item {
     width: clamp(11rem, 18vw, 20rem);
     height: 37rem;

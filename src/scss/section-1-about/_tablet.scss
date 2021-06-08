@@ -6,7 +6,7 @@
    TABLET - SMALL
   ==========================
 */
-@include mediaBreakpoint($small) {
+@include mediaBreakpoint($tablet-small) {
   #about-image {
     background-image: url("/src/images/desktop/image-interactive.jpg");
   }
@@ -25,7 +25,7 @@
    TABLET - LARGE
   ==========================
 */
-@include mediaBreakpoint($medium) {
+@include mediaBreakpoint($tablet-large) {
   #about {
     @include containerPadding;
     @include flexDisplay(space-between);
@@ -47,7 +47,7 @@
     position: absolute;
     right: 3rem;
 
-    width: 35rem;
+    width: 36rem;
     height: 20rem;
 
     text-align: left;

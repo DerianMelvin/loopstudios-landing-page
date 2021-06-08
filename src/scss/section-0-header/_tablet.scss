@@ -6,7 +6,7 @@
    TABLET - SMALL
   ==========================
 */
-@include mediaBreakpoint($small) {
+@include mediaBreakpoint($tablet-small) {
   header {
     height: auto;
 
@@ -51,7 +51,7 @@
    TABLET - LARGE
   ==========================
 */
-@include mediaBreakpoint($medium) {
+@include mediaBreakpoint($tablet-large) {
   #header-nav {
     ul {
       @include flexDisplay(center);

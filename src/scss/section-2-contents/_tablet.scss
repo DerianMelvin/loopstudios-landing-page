@@ -6,7 +6,7 @@
    TABLET - SMALL
   ==========================
 */
-@include mediaBreakpoint($small) {
+@include mediaBreakpoint($tablet-small) {
   #contents-heading {
     @include headingFont(2.7rem);
   }
@@ -16,7 +16,7 @@
    TABLET - LARGE
   ==========================
 */
-@include mediaBreakpoint($medium) {
+@include mediaBreakpoint($tablet-large) {
   #contents {
     justify-items: left;
     grid-template-areas:
