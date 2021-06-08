@@ -12,6 +12,12 @@ body {
   font-family: "Alata", sans-serif;
 }
 
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 /*
   ==========================
    MOBILE
@@ -48,12 +54,9 @@ header {
   border: 1px solid white;
 }
 #hero-text h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 2.1rem;
-  font-weight: 300;
-  text-transform: uppercase;
   margin: 0;
   width: 70%;
+  font-size: 2rem;
   line-height: 2.2rem;
 }
 
@@ -83,11 +86,8 @@ header {
     border: 1px solid white;
   }
   #hero-text h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2.7rem;
-    font-weight: 300;
-    text-transform: uppercase;
     width: auto;
+    font-size: calc(2rem * 1.2);
     line-height: 2.7rem;
   }
 }
@@ -106,6 +106,10 @@ header {
   #header-nav ul li {
     margin: 0 1rem;
   }
+
+  #hero-text h1 {
+    font-size: calc(2rem * 1.4);
+  }
 }
 /*
   ==========================
@@ -122,10 +126,7 @@ header {
     height: 15rem;
   }
   #hero-text h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 3.4rem;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-size: calc(2rem * 1.6);
     line-height: 3.3rem;
   }
 }
@@ -145,10 +146,7 @@ header {
     height: 17rem;
   }
   #hero-text h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 4rem;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-size: calc(2rem * 1.9);
     line-height: 3.8rem;
   }
 }
@@ -184,12 +182,9 @@ header {
   background-color: white;
 }
 #about-article h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
-  text-transform: uppercase;
   margin: 2rem 0;
   width: 95%;
+  font-size: 2rem;
   color: black;
 }
 #about-article p {
@@ -209,11 +204,8 @@ header {
   }
 
   #about-article h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2.7rem;
-    font-weight: 300;
-    text-transform: uppercase;
     width: 90%;
+    font-size: calc(2rem * 1.2);
   }
 }
 /*
@@ -247,6 +239,7 @@ header {
   }
   #about-article h1 {
     margin: 0;
+    font-size: calc(2rem * 1.4);
     width: 80%;
   }
 }
@@ -266,10 +259,7 @@ header {
     height: 23rem;
   }
   #about-article h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 3.4rem;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-size: calc(2rem * 1.6);
   }
   #about-article p {
     font-size: 1.2rem;
@@ -291,10 +281,7 @@ header {
     transform: translate(0, 15rem);
   }
   #about-article h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 4rem;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-size: calc(2rem * 1.9);
   }
   #about-article p {
     font-size: 1.4rem;
@@ -314,19 +301,12 @@ header {
 }
 
 #contents-heading {
-  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
-  font-weight: 300;
-  text-transform: uppercase;
   text-align: center;
   grid-area: heading;
 }
 
 #contents-button {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  text-transform: uppercase;
   margin: 2rem 0;
   padding-top: 0.3rem;
   grid-area: button;
@@ -337,8 +317,9 @@ header {
   border: 1px solid black;
   background-color: white;
 }
-#contents-button h4 {
+#contents-button h3 {
   margin: 0;
+  font-size: 1.1rem;
 }
 
 #contents-list {
@@ -361,13 +342,10 @@ header {
   width: 100%;
   color: white;
 }
-.item h4 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.7rem;
-  font-weight: 300;
-  text-transform: uppercase;
+.item h2 {
   margin: 0;
-  width: 10rem;
+  width: 9rem;
+  font-size: 1.5rem;
 }
 
 #item-1 {
@@ -433,10 +411,15 @@ header {
 */
 @media (min-width: 500px) {
   #contents-heading {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2.7rem;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-size: calc(2rem * 1.2);
+  }
+
+  #contents-button {
+    font-size: calc(1.1rem * 1.2);
+  }
+
+  .item h2 {
+    font-size: calc(1.5rem * 1.2);
   }
 }
 /*
@@ -451,19 +434,13 @@ header {
   }
 
   #contents-heading {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2.7rem;
-    font-weight: 300;
-    text-transform: uppercase;
     grid-area: heading;
+    font-size: calc(2rem * 1.4);
   }
 
   #contents-button {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    text-transform: uppercase;
     justify-self: flex-end;
+    font-size: calc(1.1rem * 1.4);
   }
 
   #contents-list {
@@ -480,13 +457,10 @@ header {
     width: clamp(10rem, 18vw, 16rem);
     height: 23rem;
   }
-  .item h4 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-transform: uppercase;
+  .item h2 {
     margin: 0;
     width: 8rem;
+    font-size: calc(1.5rem * 1);
   }
 }
 #item-1 {
@@ -554,6 +528,10 @@ header {
   .item {
     height: 30rem;
   }
+  .item h2 {
+    width: 10rem;
+    font-size: calc(1.5rem * 1.1);
+  }
 }
 /*
   ==========================
@@ -564,6 +542,9 @@ header {
   .item {
     width: clamp(11rem, 18vw, 20rem);
     height: 37rem;
+  }
+  .item h2 {
+    font-size: calc(1.5rem * 1.3);
   }
 }
 /*
