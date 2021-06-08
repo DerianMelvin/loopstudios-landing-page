@@ -12,6 +12,11 @@ body {
   font-family: "Alata", sans-serif;
 }
 
+/*
+  ==========================
+   MOBILE
+  ==========================
+*/
 header {
   padding: 2rem 10%;
   height: 100vh;
@@ -147,6 +152,11 @@ header {
     line-height: 3.8rem;
   }
 }
+/*
+  ==========================
+   MOBILE
+  ==========================
+*/
 #about {
   padding: 2rem 10%;
   display: flex;
@@ -290,6 +300,11 @@ header {
     font-size: 1.4rem;
   }
 }
+/*
+  ==========================
+   MOBILE
+  ==========================
+*/
 #contents {
   padding: 2rem 10%;
   display: grid;
@@ -551,36 +566,50 @@ header {
     height: 37rem;
   }
 }
+/*
+  ==========================
+   MOBILE
+  ==========================
+*/
 footer {
   padding: 2rem 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   color: white;
   background-color: black;
 }
 
+#footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
 #footer-nav img {
+  margin: 2rem 0;
   height: 2rem;
 }
 #footer-nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 0;
-  margin: 1rem 0 0;
+  margin-top: 1rem;
   list-style: none;
 }
 #footer-nav ul li {
-  margin-right: 1rem;
+  padding: 1rem;
 }
 
 #footer-info {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-items: flex-end;
   flex-direction: column;
+  margin-top: 2rem;
 }
 #footer-info ul {
   display: flex;
@@ -591,10 +620,56 @@ footer {
   height: 2.4rem;
 }
 #footer-info ul a {
-  margin-left: 1rem;
+  padding: 0.7rem;
 }
 
 #copyright {
-  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  text-align: center;
   color: dimgray;
+}
+
+/*
+  ==========================
+   TABLET - SMALL
+  ==========================
+*/
+/*
+  ==========================
+   TABLET - LARGE
+  ==========================
+*/
+@media (min-width: 860px) {
+  footer {
+    flex-direction: row;
+  }
+
+  #footer-nav img {
+    margin: 1rem 0;
+    align-self: flex-start;
+  }
+  #footer-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  #footer-nav ul li {
+    padding: 0;
+    margin-right: 1rem;
+  }
+
+  #footer-info {
+    align-items: flex-end;
+    margin-top: 0;
+  }
+  #footer-info ul a {
+    padding: 0;
+    margin-left: 1rem;
+  }
+
+  #copyright {
+    margin: 2rem 0 0;
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=main.css.map */
