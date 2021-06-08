@@ -1,6 +1,11 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
+/*
+  ==========================
+   MOBILE
+  ==========================
+*/
 #about {
   @include containerPadding;
   @include flexDisplay(center);
@@ -11,7 +16,7 @@
 }
 
 #about-image {
-  // 16:9 aspect ratio
+  // Display image in 16:9 aspect ratio
   padding-top: 56.25%;
 
   width: 100%;

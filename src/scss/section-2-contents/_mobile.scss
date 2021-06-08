@@ -1,6 +1,11 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
+/*
+  ==========================
+   MOBILE
+  ==========================
+*/
 #contents {
   @include containerPadding;
 
