@@ -1,0 +1,58 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+/*
+  ==========================
+   TABLET - SMALL
+  ==========================
+*/
+@include mediaBreakpoint($small) {
+}
+
+/*
+  ==========================
+   TABLET - LARGE
+  ==========================
+*/
+@include mediaBreakpoint($medium) {
+  footer {
+    flex-direction: row;
+  }
+
+  #footer-nav {
+    img {
+      margin: 1rem 0;
+
+      align-self: flex-start;
+    }
+
+    ul {
+      @include flexDisplay(center);
+
+      flex-direction: row;
+
+      li {
+        padding: 0;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  #footer-info {
+    align-items: flex-end;
+
+    margin-top: 0;
+
+    ul {
+      a {
+        padding: 0;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  #copyright {
+    margin: 2rem 0 0;
+    font-size: 0.9rem;
+  }
+}
