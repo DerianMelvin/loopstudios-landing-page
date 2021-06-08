@@ -13,9 +13,9 @@
 
   #about-article {
     h1 {
-      @include headingFont(2.7rem);
-
       width: 90%;
+
+      font-size: $h1-tablet-small;
     }
   }
 }
@@ -57,6 +57,8 @@
     h1 {
       margin: 0;
 
+      font-size: $h1-tablet-large;
+      
       width: 80%;
     }
   }

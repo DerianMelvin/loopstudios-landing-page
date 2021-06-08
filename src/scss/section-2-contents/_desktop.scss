@@ -9,6 +9,11 @@
 @include mediaBreakpoint($desktop-small) {
   .item {
     height: 30rem;
+    
+    h2 {
+      width: 10rem;
+      font-size: $h2-desktop-small;
+    }
   }
 }
 
@@ -21,5 +26,9 @@
   .item {
     width: clamp(11rem, 18vw, 20rem);
     height: 37rem;
+
+    h2 {
+      font-size: $h2-desktop-large;
+    }
   }
 }

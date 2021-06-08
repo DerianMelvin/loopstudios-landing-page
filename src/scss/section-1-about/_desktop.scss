@@ -18,7 +18,7 @@
     height: 23rem;
 
     h1 {
-      @include headingFont(3.4rem);
+      font-size: $h1-desktop-small;
     }
 
     p {
@@ -44,7 +44,7 @@
     transform: translate(0, 15rem);
 
     h1 {
-      @include headingFont(4rem);
+      font-size: $h1-desktop-large;
     }
 
     p {

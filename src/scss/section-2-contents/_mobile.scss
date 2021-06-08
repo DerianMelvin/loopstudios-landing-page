@@ -19,15 +19,13 @@
 }
 
 #contents-heading {
-  @include headingFont(2rem);
+  font-size: $h1-base-size;
 
   text-align: center;
   grid-area: heading;
 }
 
 #contents-button {
-  @include headingFont(1rem);
-
   margin: 2rem 0;
   padding-top: 0.3rem;
 
@@ -42,8 +40,10 @@
   border: 1px solid $black;
   background-color: $white;
 
-  h4 {
+  h3 {
     margin: 0;
+
+    font-size: $h3-base-size;
   }
 }
 
@@ -73,12 +73,12 @@
 
   color: $white;
 
-  h4 {
-    @include headingFont(1.7rem);
-
+  h2 {
     margin: 0;
 
-    width: 10rem;
+    width: 9rem;
+    
+    font-size: $h2-base-size;
   }
 }
 

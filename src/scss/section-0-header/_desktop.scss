@@ -19,7 +19,7 @@
     height: 15rem;
 
     h1 {
-      @include headingFont(3.4rem);
+      font-size: $h1-desktop-small;
 
       line-height: 3.3rem;
     }
@@ -46,7 +46,7 @@
     height: 17rem;
 
     h1 {
-      @include headingFont(4rem);
+      font-size: $h1-desktop-large;
 
       line-height: 3.8rem;
     }
