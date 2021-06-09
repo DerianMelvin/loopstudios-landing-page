@@ -7,9 +7,14 @@
   ==========================
 */
 @include mediaBreakpoint($desktop-small) {
+  #contents {
+    @include containerPaddingType(desktop);
+  }
+
   .item {
+    width: clamp(11rem, 17.2vw, 19rem);
     height: 30rem;
-    
+
     h2 {
       width: 10rem;
       font-size: $h2-desktop-small;
@@ -24,7 +29,7 @@
 */
 @include mediaBreakpoint($desktop-large) {
   .item {
-    width: clamp(11rem, 18vw, 20rem);
+    width: clamp(11rem, 18.3vw, 20rem);
     height: 37rem;
 
     h2 {

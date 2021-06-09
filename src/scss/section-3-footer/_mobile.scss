@@ -7,7 +7,7 @@
   ==========================
 */
 footer {
-  @include containerPadding;
+  @include containerPaddingType(mobile);
   @include flexDisplay(space-between);
 
   flex-direction: column;

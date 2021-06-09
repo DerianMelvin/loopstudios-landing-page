@@ -7,7 +7,7 @@
   ==========================
 */
 header {
-  @include containerPadding;
+  @include containerPaddingType(mobile);
 
   height: 100vh;
 
@@ -40,12 +40,12 @@ header {
   margin-top: 30vh;
   padding: 7%;
 
-  border: 1px solid $white;
+  border: 2px solid $white;
 
   h1 {
     margin: 0;
 
-    width: 70%;
+    width: 50%;
     font-size: $h1-base-size;
     line-height: 2.2rem;
   }

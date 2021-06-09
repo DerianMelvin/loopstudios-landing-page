@@ -7,7 +7,7 @@
   ==========================
 */
 #about {
-  @include containerPadding;
+  @include containerPaddingType(mobile);
   @include flexDisplay(center);
 
   flex-direction: column;

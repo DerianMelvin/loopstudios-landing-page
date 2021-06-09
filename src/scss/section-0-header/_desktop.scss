@@ -7,6 +7,10 @@
   ==========================
 */
 @include mediaBreakpoint($desktop-small) {
+  header {
+    @include containerPaddingType(desktop);
+  }
+
   #header-nav {
     // Logo
     img {

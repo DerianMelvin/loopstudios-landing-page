@@ -6,6 +6,11 @@
    DESKTOP - SMALL
   ==========================
 */
+@include mediaBreakpoint($desktop-small) {
+  footer {
+    @include containerPaddingType(desktop);
+  }
+}
 
 /*
   ==========================

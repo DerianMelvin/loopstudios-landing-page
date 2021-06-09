@@ -7,12 +7,18 @@
   ==========================
 */
 @include mediaBreakpoint($tablet-small) {
+  #about {
+    @include containerPaddingType(tablet);
+  }
+  
   #about-image {
     background-image: url("/src/images/desktop/image-interactive.jpg");
   }
 
   #about-article {
     h1 {
+      padding-bottom: 1rem;
+
       width: 90%;
 
       font-size: $h1-tablet-small;
@@ -27,7 +33,6 @@
 */
 @include mediaBreakpoint($tablet-large) {
   #about {
-    @include containerPadding;
     @include flexDisplay(space-between);
 
     flex-direction: row;
@@ -41,7 +46,7 @@
 
   #about-article {
     display: block;
-    
+
     padding: 3.5rem;
 
     position: absolute;
@@ -58,7 +63,7 @@
       margin: 0;
 
       font-size: $h1-tablet-large;
-      
+
       width: 80%;
     }
   }

@@ -7,6 +7,10 @@
   ==========================
 */
 @include mediaBreakpoint($tablet-small) {
+  #contents {
+    @include containerPaddingType(tablet);
+  }
+
   #contents-heading {
     font-size: $h1-tablet-small;
   }
@@ -74,11 +78,8 @@
 // Add unique background images to each item
 @each $num, $url in $contents-background-desktop {
   #item-#{$num} {
-    background: linear-gradient(
-      45deg,
-      hsla(0, 0%, 0%, 0.7),
-      hsla(0, 0%, 0%, 0)
-    ), $url;
+    background: linear-gradient(45deg, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0)),
+      $url;
 
     background-position: center;
     background-size: cover;
