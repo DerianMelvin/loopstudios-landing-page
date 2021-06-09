@@ -1,5 +1,14 @@
-@mixin containerPadding {
-  padding: 2rem 10%;
+// Set container padding based on display type
+@mixin containerPaddingType($display-type) {
+  @if $display-type == mobile {
+    padding: 2rem 1.3rem;
+  } @else if $display-type == tablet {
+    padding: 3rem 8%;
+  } @else if $display-type == desktop {
+    padding: 3rem 10%;
+  } @else {
+    @error "Invalid display type: #{$display-type}. Choose either mobile, tablet, or desktop value";
+  }
 }
 
 @mixin flexDisplay($justify) {
