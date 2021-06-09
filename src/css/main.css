@@ -24,7 +24,7 @@ h1, h2, h3 {
   ==========================
 */
 header {
-  padding: 2rem 10%;
+  padding: 2rem 1.3rem;
   height: 100vh;
   color: white;
   background-image: url("/src/images/mobile/image-hero.jpg");
@@ -51,11 +51,11 @@ header {
   justify-content: flex-start;
   margin-top: 30vh;
   padding: 7%;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 #hero-text h1 {
   margin: 0;
-  width: 70%;
+  width: 50%;
   font-size: 2rem;
   line-height: 2.2rem;
 }
@@ -67,6 +67,7 @@ header {
 */
 @media (min-width: 500px) {
   header {
+    padding: 3rem 8%;
     height: auto;
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("/src/images/desktop/image-hero.jpg");
   }
@@ -83,7 +84,7 @@ header {
     padding: 0 1.5rem;
     width: 24rem;
     height: 12rem;
-    border: 1px solid white;
+    border: 2px solid white;
   }
   #hero-text h1 {
     width: auto;
@@ -104,7 +105,7 @@ header {
     list-style: none;
   }
   #header-nav ul li {
-    margin: 0 1rem;
+    margin-left: 2rem;
   }
 
   #hero-text h1 {
@@ -117,6 +118,10 @@ header {
   ==========================
 */
 @media (min-width: 1024px) {
+  header {
+    padding: 3rem 10%;
+  }
+
   #header-nav img {
     height: 2.6rem;
   }
@@ -156,7 +161,7 @@ header {
   ==========================
 */
 #about {
-  padding: 2rem 10%;
+  padding: 2rem 1.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,11 +204,16 @@ header {
   ==========================
 */
 @media (min-width: 500px) {
+  #about {
+    padding: 3rem 8%;
+  }
+
   #about-image {
     background-image: url("/src/images/desktop/image-interactive.jpg");
   }
 
   #about-article h1 {
+    padding-bottom: 1rem;
     width: 90%;
     font-size: calc(2rem * 1.2);
   }
@@ -215,7 +225,6 @@ header {
 */
 @media (min-width: 860px) {
   #about {
-    padding: 2rem 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -250,6 +259,7 @@ header {
 */
 @media (min-width: 1024px) {
   #about {
+    padding: 3rem 10%;
     margin: 6rem 0;
   }
 
@@ -293,7 +303,7 @@ header {
   ==========================
 */
 #contents {
-  padding: 2rem 10%;
+  padding: 2rem 1.3rem;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -410,6 +420,10 @@ header {
   ==========================
 */
 @media (min-width: 500px) {
+  #contents {
+    padding: 3rem 8%;
+  }
+
   #contents-heading {
     font-size: calc(2rem * 1.2);
   }
@@ -525,7 +539,12 @@ header {
   ==========================
 */
 @media (min-width: 1024px) {
+  #contents {
+    padding: 3rem 10%;
+  }
+
   .item {
+    width: clamp(11rem, 17.2vw, 19rem);
     height: 30rem;
   }
   .item h2 {
@@ -540,7 +559,7 @@ header {
 */
 @media (min-width: 1440px) {
   .item {
-    width: clamp(11rem, 18vw, 20rem);
+    width: clamp(11rem, 18.3vw, 20rem);
     height: 37rem;
   }
   .item h2 {
@@ -553,7 +572,7 @@ header {
   ==========================
 */
 footer {
-  padding: 2rem 10%;
+  padding: 2rem 1.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -615,6 +634,11 @@ footer {
    TABLET - SMALL
   ==========================
 */
+@media (min-width: 500px) {
+  footer {
+    padding: 3rem 8%;
+  }
+}
 /*
   ==========================
    TABLET - LARGE
@@ -653,4 +677,19 @@ footer {
     margin: 2rem 0 0;
     font-size: 0.9rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*
+  ==========================
+   DESKTOP - SMALL
+  ==========================
+*/
+@media (min-width: 1024px) {
+  footer {
+    padding: 3rem 10%;
+  }
+}
+/*
+  ==========================
+   DESKTOP - LARGE
+  ==========================
+*//*# sourceMappingURL=main.css.map */
