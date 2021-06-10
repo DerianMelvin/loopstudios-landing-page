@@ -8,7 +8,7 @@
 */
 @include mediaBreakpoint($desktop-small) {
   footer {
-    @include containerPaddingType(desktop);
+    padding: 2rem 10%;
   }
 }
 

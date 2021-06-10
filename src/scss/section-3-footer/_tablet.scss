@@ -8,7 +8,7 @@
 */
 @include mediaBreakpoint($tablet-small) {
   footer {
-    @include containerPaddingType(tablet);
+    padding: 2rem 8%;
   }
 }
 
