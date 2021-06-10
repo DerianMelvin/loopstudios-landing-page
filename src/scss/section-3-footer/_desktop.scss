@@ -10,6 +10,12 @@
   footer {
     padding: 2rem 10%;
   }
+
+  #footer-nav {
+    img {
+      height: $logo-size-desktop-small;
+    }
+  }
 }
 
 /*
@@ -17,3 +23,10 @@
    DESKTOP - LARGE
   ==========================
 */
+@include mediaBreakpoint($desktop-large) {
+  #footer-nav {
+    img {
+      height: $logo-size-desktop-large;
+    }
+  }
+}
