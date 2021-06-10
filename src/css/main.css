@@ -39,7 +39,7 @@ header {
   justify-content: space-between;
 }
 #header-nav img {
-  height: 1.6rem;
+  height: 1.7rem;
 }
 #header-nav ul {
   display: none;
@@ -73,7 +73,7 @@ header {
   }
 
   #header-nav img {
-    height: 2rem;
+    height: 2.4rem;
   }
 
   #hero-text {
@@ -142,7 +142,7 @@ header {
 */
 @media (min-width: 1440px) {
   #header-nav img {
-    height: 3.1rem;
+    height: 3rem;
   }
 
   #hero-text {
@@ -166,7 +166,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 #about-image {
@@ -229,7 +229,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin: 5rem 0;
+    margin: 2rem 0;
   }
 
   #about-image {
@@ -260,7 +260,7 @@ header {
 @media (min-width: 1024px) {
   #about {
     padding: 3rem 10%;
-    margin: 6rem 0;
+    margin: 3rem 0;
   }
 
   #about-article {
@@ -282,7 +282,7 @@ header {
 */
 @media (min-width: 1440px) {
   #about {
-    margin: 7rem 0;
+    margin: 4rem 0;
   }
 
   #about-article {
@@ -443,6 +443,7 @@ header {
 */
 @media (min-width: 860px) {
   #contents {
+    margin-bottom: 2rem;
     justify-items: left;
     grid-template-areas: "heading button" "contentsList contentsList";
   }
@@ -589,7 +590,7 @@ footer {
 }
 #footer-nav img {
   margin: 2rem 0;
-  height: 2rem;
+  height: 1.7rem;
 }
 #footer-nav ul {
   display: flex;
@@ -636,7 +637,11 @@ footer {
 */
 @media (min-width: 500px) {
   footer {
-    padding: 3rem 8%;
+    padding: 2rem 8%;
+  }
+
+  #footer-nav img {
+    height: 2.4rem;
   }
 }
 /*
@@ -685,11 +690,20 @@ footer {
 */
 @media (min-width: 1024px) {
   footer {
-    padding: 3rem 10%;
+    padding: 2rem 10%;
+  }
+
+  #footer-nav img {
+    height: 2.6rem;
   }
 }
 /*
   ==========================
    DESKTOP - LARGE
   ==========================
-*//*# sourceMappingURL=main.css.map */
+*/
+@media (min-width: 1440px) {
+  #footer-nav img {
+    height: 3rem;
+  }
+}/*# sourceMappingURL=main.css.map */
