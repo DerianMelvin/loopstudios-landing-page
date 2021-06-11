@@ -67,8 +67,13 @@
   }
 
   #hero-text {
+    width: 26rem;
+    height: 13rem;
+
     h1 {
       font-size: $h1-tablet-large;
+
+      line-height: 2.9rem;
     }
   }
 }

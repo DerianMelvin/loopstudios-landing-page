@@ -29,6 +29,8 @@
 */
 @include mediaBreakpoint($desktop-large) {
   .item {
+    padding: 1.8rem;
+
     width: clamp(11rem, 18.3vw, 20rem);
     height: 37rem;
 

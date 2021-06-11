@@ -10,16 +10,18 @@
   #about {
     @include containerPaddingType(tablet);
   }
-  
+
   #about-image {
     background-image: url("/src/images/desktop/image-interactive.jpg");
   }
 
   #about-article {
     h1 {
+      margin: 3rem 0 0;
+
       padding-bottom: 1rem;
 
-      width: 90%;
+      width: 80%;
 
       font-size: $h1-tablet-small;
     }
