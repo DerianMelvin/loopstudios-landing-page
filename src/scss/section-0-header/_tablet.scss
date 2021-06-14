@@ -22,8 +22,22 @@
 
   #header-nav {
     // Logo
-    img {
+    #header-logo {
       height: $logo-size-tablet;
+    }
+
+    // Mobile navigation
+    #hamburger-links {
+      padding: 14rem 8% 20%;
+
+      a {
+        font-size: $h1-tablet-small;
+      }
+    }
+
+    // Close icon
+    #icon-close {
+      margin: 3rem 8%;
     }
   }
 
@@ -55,14 +69,31 @@
 */
 @include mediaBreakpoint($tablet-large) {
   #header-nav {
-    ul {
+    // Large tablet / desktop navigation
+    #default-links {
       @include flexDisplay(center);
 
       list-style: none;
 
       li {
         margin-left: 2rem;
+
+        a {
+          padding: 0.5rem 0;
+
+          text-decoration: none;
+          color: inherit;
+        }
       }
+    }
+
+    // Mobile navigation
+    #hamburger-links {
+      display: none;
+    }
+    
+    .mobile-nav-icon {
+      display: none;
     }
   }
 
