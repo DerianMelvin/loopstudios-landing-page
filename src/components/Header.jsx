@@ -1,17 +1,31 @@
 import logo from "../images/logo.svg";
+import HamburgerNav from "./HamburgerNav";
 
 const Header = () => {
   return (
     <header>
       <nav id="header-nav">
-        <img src={logo} alt="loopstudios logo" />
-        <ul>
-          <li className="link">About</li>
-          <li className="link">Careers</li>
-          <li className="link">Events</li>
-          <li className="link">Products</li>
-          <li className="link">Support</li>
+        <img id="header-logo" src={logo} alt="loopstudios logo" />
+
+        <ul id="default-links">
+          <li className="link">
+            <a href="#about">About</a>
+          </li>
+          <li className="link">
+            <a href="#careers">Careers</a>
+          </li>
+          <li className="link">
+            <a href="#events">Events</a>
+          </li>
+          <li className="link">
+            <a href="#products">Products</a>
+          </li>
+          <li className="link">
+            <a href="#support">Support</a>
+          </li>
         </ul>
+        
+        <HamburgerNav />
       </nav>
 
       <div id="hero-text">
