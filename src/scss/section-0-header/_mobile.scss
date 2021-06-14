@@ -24,12 +24,69 @@ header {
   @include flexDisplay(space-between);
 
   // Logo
-  img {
+  #header-logo {
     height: $logo-size-mobile;
+    z-index: 10;
   }
 
-  // Navigation
-  ul {
+  // Mobile navigation
+  #hamburger-links {
+    @include containerPaddingType(mobile);
+
+    margin: 0;
+    padding: 10rem 1.3rem 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    list-style: none;
+    background: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0.95),
+      hsla(0, 0%, 0%, 0.9)
+    );
+
+    a {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      font-size: $h1-base-size;
+
+      text-transform: uppercase;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .mobile-nav-icon {
+    z-index: 10;
+  }
+  
+  // Hamburger icon
+  #icon-hamburger {
+    height: calc(#{$logo-size-mobile} * 0.9);
+  }
+
+  // Close icon
+  #icon-close {
+    margin: 2rem 1.3rem;
+
+    height: calc(#{$logo-size-mobile} * 1.1);
+
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  // Large tablet / desktop navigation
+  #default-links {
     display: none;
   }
 }
