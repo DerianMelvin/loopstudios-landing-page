@@ -1,0 +1,53 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+/*
+  ==========================
+   ANIMATION
+  ==========================
+*/
+@include mediaBreakpoint($tablet-large) {
+  // section-0-header
+  #header-nav {
+    @include trans-a-borderBottom;
+  }
+
+  // section-2-contents
+  #contents-button {
+    transition: color 0.1s ease-out, background-color 0.1s ease-out;
+
+    &:hover {
+      cursor: pointer;
+      color: $white;
+      background-color: $black;
+    }
+  }
+
+  @each $num, $url in $contents-background-desktop {
+    #item-#{$num} {
+      transition: color 0.3s ease-out;
+
+      &:hover {
+        cursor: pointer;
+        color: $black;
+        background: linear-gradient(
+            0deg,
+            hsla(0, 0%, 100%, 0.9),
+            hsla(0, 0%, 100%, 0.6)
+          ),
+          $url;
+
+        @include backgroundProps;
+      }
+    }
+  }
+
+  // section-3-footer
+  #footer-links {
+    @include trans-a-borderBottom;
+  }
+
+  #social-media {
+    @include trans-a-borderBottom;
+  }
+}
