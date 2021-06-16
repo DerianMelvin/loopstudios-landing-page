@@ -17,9 +17,28 @@
   justify-content: $justify;
 }
 
+@mixin backgroundProps {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 // Set media queries based on given screen size
 @mixin mediaBreakpoint($media-size) {
   @media (min-width: #{$media-size}) {
     @content;
+  }
+}
+
+// Set hover transition effect
+// trans-(element)-(property)
+@mixin trans-a-borderBottom {
+  a {
+    transition: border-bottom 0.05s ease-out;
+    border-bottom: 0px solid white;
+
+    &:hover {
+      border-bottom: 2px solid white;
+    }
   }
 }
