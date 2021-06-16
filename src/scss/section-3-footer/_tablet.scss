@@ -35,7 +35,7 @@
       align-self: flex-start;
     }
 
-    ul {
+    #footer-links {
       @include flexDisplay(center);
 
       flex-direction: row;
@@ -52,9 +52,9 @@
 
     margin-top: 0;
 
-    ul {
+    #social-media {
       a {
-        padding: 0;
+        padding: 0.5rem 0;
         margin-left: 1rem;
       }
     }

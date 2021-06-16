@@ -26,7 +26,7 @@ footer {
     height: $logo-size-mobile;
   }
 
-  ul {
+  #footer-links {
     @include flexDisplay(center);
 
     flex-direction: column;
@@ -38,6 +38,13 @@ footer {
 
     li {
       padding: 1rem;
+
+      a {
+          padding: 0.5rem 0;
+          
+          text-decoration: none;
+          color: inherit;
+        }
     }
   }
 }
@@ -49,7 +56,7 @@ footer {
 
   margin-top: 2rem;
 
-  ul {
+  #social-media {
     @include flexDisplay(center);
 
     padding: 0;
