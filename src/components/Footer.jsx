@@ -12,12 +12,12 @@ const Footer = () => {
     <footer>
         <nav id="footer-nav">
           <img src={logo} alt="loopstudios logo" />
-          <ul>
-            <li className="link">About</li>
-            <li className="link">Careers</li>
-            <li className="link">Events</li>
-            <li className="link">Products</li>
-            <li className="link">Support</li>
+          <ul id="footer-links">
+            <li className="link"><a href="#about">About</a></li>
+            <li className="link"><a href="#careers">Careers</a></li>
+            <li className="link"><a href="#events">Events</a></li>
+            <li className="link"><a href="#products">Products</a></li>
+            <li className="link"><a href="#support">Support</a></li>
           </ul>
         </nav>
 
