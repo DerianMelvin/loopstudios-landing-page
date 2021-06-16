@@ -8,6 +8,7 @@
 */
 header {
   @include containerPaddingType(mobile);
+  @include backgroundProps;
 
   height: 100vh;
 
@@ -15,9 +16,6 @@ header {
   color: $white;
 
   background-image: url("/src/images/mobile/image-hero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #header-nav {
@@ -68,7 +66,7 @@ header {
   .mobile-nav-icon {
     z-index: 10;
   }
-  
+
   // Hamburger icon
   #icon-hamburger {
     height: calc(#{$logo-size-mobile} * 0.9);

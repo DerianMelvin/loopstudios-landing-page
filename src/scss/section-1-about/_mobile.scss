@@ -16,15 +16,14 @@
 }
 
 #about-image {
+  @include backgroundProps;
+
   // Display image in 16:9 aspect ratio
   padding-top: 56.25%;
 
   width: 100%;
 
   background-image: url("/src/images/mobile/image-interactive.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #about-article {
